@@ -10,13 +10,13 @@ function App() {
         fetchUrl={requests.feachNetflixOriginals}
         isLargeRow
       />
-      <Row title="Top Rated" fetchUrl={requests.feactTopRated}
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated}
       />
-      <Row title="Action Movies" fetchUrl={requests.feactActionMovies}/>
-      <Row title="Comedy Movies" fetchUrl={requests.feactComedyMovies}/>
-      <Row title="Horror Movies" fetchUrl={requests.feactHorrorMovies}/>
-      <Row title="Romance Movies" fetchUrl={requests.feactRomanceMovies}/>
-      <Row title="Documentaries" fetchUrl={requests.feactDocumentMovies}/>
+      <Row title="Anime" fetchUrl={requests.fetchAnime}/>
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/>
+      <Row title="History Movies" fetchUrl={requests.fetchHistoryMovies}/>
+      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/>
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumentMovies}/>
     </div>
   );
 }
