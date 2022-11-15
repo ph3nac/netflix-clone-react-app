@@ -1,4 +1,4 @@
-import axios from "axios";
+import { instance as axios } from "./axios";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -21,13 +21,11 @@ export const Row = ({ title, fetchUrl }: Props) => {
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(fetchUrl);
-      setMovies(request.data.result);
+      setMovies(request.data.results);
       return request;
     }
     fetchData();
   }, [fetchUrl]);
 
-  console.log(movies);
-
-  return <div className="Row" />;
+  return <div className="Row" />
 };
