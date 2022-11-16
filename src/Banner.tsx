@@ -22,7 +22,6 @@ export const Banner = () => {
           Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
-      return request;
     }
     fetchData();
   }, []);
